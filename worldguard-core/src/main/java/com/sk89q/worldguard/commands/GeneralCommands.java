@@ -127,8 +127,8 @@ public class GeneralCommands {
         }
     }
     
-    @Command(aliases = {"heal"}, usage = "[player]", desc = "Heal a player", flags = "s", max = 1)
-    public void heal(CommandContext args, Actor sender) throws CommandException, AuthorizationException {
+    @Command(aliases = {"wgheal"}, usage = "[player]", desc = "Heal a player", flags = "s", max = 1)
+    public void wgheal(CommandContext args, Actor sender) throws CommandException, AuthorizationException {
 
         Iterable<? extends LocalPlayer> targets = null;
         boolean included = false;
